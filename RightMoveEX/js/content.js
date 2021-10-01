@@ -1,3 +1,5 @@
+document.getElementsByTagName('title')[0].innerHTML = 'Crawling ...'
+
 if (!localStorage.getItem('lastProperty')) {
     localStorage.setItem('lastProperty', 'nothing');
     console.log('lastProperty Token set as nothing');
