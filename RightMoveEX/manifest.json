@@ -1,0 +1,31 @@
+{
+    "version": "1.0.0",
+    "name": "RightMoveUK",
+    "description": "RightMove New Houses Crawler",
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "js/content.js"
+            ],
+            "matches": [
+                "https://www.rightmove.co.uk/property-for-sale/find.html?locationIdentifier=USERDEFINEDAREA%5E%7B%22polylines%22%3A%22qnhmHnwnh%40yczBc%7B%7Df%40wxiFoxaNgguG%3F%7D~rBn%7DnDii~P~ceIeutFxfsDeutTwvfFri%7DIvbyo%40fsxQhsfEfz%7CO%60l%7DKnazCgtRfleJcd~E_~_E%7DjxTpgLawXcymBouaB%60n_Afjp%40x%7CwA%7Cj_AfvkKrytA%22%7D&sortType=6&propertyTypes=&mustHave=&dontShow=&furnishTypes=&keywords="
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "./popup/index.html",
+        "default_icon": {
+            "16": "/images/16.png",
+            "32": "/images/32.png",
+            "128": "/images/128.png"
+        }
+    },
+    "manifest_version": 3
+}
